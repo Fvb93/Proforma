@@ -1,0 +1,153 @@
+<!doctype html> <!-- Présice le langage utilisé  -->
+<html lang="fr"> <!-- Précise la langue du code  -->
+	<head> <!-- identification du site  -->
+		<meta charset="utf-8"/> <!-- indique au navigateur une norme de langage  -->
+		<meta name="description" content="Ceci est le contenu de notre première page HTML"/> <!-- description du site  -->
+		<title>Ma première page HTML</title> 	<!-- Balise <title> pour préciser le titre Affiché dans l'onglet du navigateur et dans les résultats du moteur de recherche -->
+	</head> 
+	<body> <!-- contenu du site  -->
+	</body>
+	</html>
+
+
+		<h1>Inscription en ligne</h1> <!-- H1 titre principal unique puis on descends jusqu'à h6 max -->
+
+		<h2>Procédure d'inscription</h2>
+		<p>Suivez les instructions ci-dessous pour vous inscrire en ligne.</p> <!-- <p> paragraphe -->
+
+		<a href="index.html">Page précédente </a>  <a href="page3.html">Page suivante</a> <!-- intégrer un lien -->
+
+
+	<ol> <!-- Liste ordonnée idem avec <ul> mais les listes ne sont pas ordonnées -->
+		<li> item </li>
+
+	</ol>
+
+
+	<img src="image.jpg" alt="texte alternatif"/> <!-- Autoformante pour afficher une image    alt affiche si problème -->
+	<img src="../images/image.jpg" alt="texte alternatif"/> <!-- ../ pour revenir en arrière et /images si la photo est dans un dossier appellé images -->
+
+	<figure>				<!-- ../ image et sa légende -->
+		<img src="image.jpg" alt="texte alternatif"/> 
+		<figcaption>
+			une légende pour cette photo
+		</figcaption>
+	</figure>
+
+<div> <!-- balise de groupement, sert uniquement pour l'esthétique d'un ensemble de balises -->	
+</div>
+
+<span> <!-- balise pour aglober une phrase, sert uniquemebt pour l'esthétique -->
+</span>
+
+
+<style>
+	p {
+		color:grey;  /* permet de modifier le style d'une seule page dans le head (/* permet les commentaires en css) */
+	}
+</style>
+
+
+div {          <!-- en css -->
+	border : 5px solid red       <!-- attention l'ordre à de l'importance (taille, remplissage, couleur) -->
+}
+
+
+<!-- lorem + tab donne du texte de remplissage -->
+
+<div class="sanglier">  <!-- permet de personnaliser un div pour lui donner des caractéristques en css (un espace permet d'attribuer plusieurs classes à un élement) -->
+.sanglier { <!-- permet de donner les caractistiques en css -->
+} 
+
+<div id="sanglier">  <!-- idem que la class sauf que l'id est à usage unique ! -->
+
+p, h1 { <!-- Pour donner les mêmes attributs à des sélecteurs dans CSS, on les sépare d'une virgule contrairement à l'espace dans une classe en html) -->
+}
+
+a:link { <!-- caractérise un lien jamais visité -->
+}
+
+a:visited { <!-- caractérise un lien déjà visité -->
+}
+
+a:hover { <!-- caractérise un lien survolé   (attention toujours le mettre après le a:link et le a:visited) -->     
+}
+
+a:active { <!-- caractérise un lien cliqué -->
+}
+
+p:first-child { <!-- caractériser le premier enfant paragraphe -->
+}
+
+p:last {
+}
+
+div:nth-child(2) {  <!-- caractériser le nième enfant paragraphe (remplacer 2 par odd pour les pairs et 2 par even pour les impairs)-->
+}
+
+h1::before {   <!-- indique un texte devant tout les h1. Ce texte n'est pas selectionnable. Idem pour après avec after -->
+	content :"Salut"
+}
+
+
+h2{
+	font-size: 32px;
+	font-style : italic;
+	font-weight: 400;    <!-- de 0 à 900 par pas de 100 -->
+	font family: "Myriad Pro", "Arial", sans-serif;  <!-- toujours prévoir sans-serif pour être utilisée par n'importe quel ordinateur dans cette famile d'écriture. Les écritures prennent les " " mais pas la famille -->
+	text-align: center;
+	text-indet;
+	text-transform: uppercase;
+	line-height : 1.5;
+	letter-spacing : 5px;
+	word-spacing : 40px;
+	border-top: 5px solid red;
+	border-bottom: 5px solid green;
+}
+
+ul {
+	list-style-type: circle; <!-- square, circle, none, .. Pour modifier les puces -->
+	list-style-image: url("../images/monimage.jpg"); <!-- pour une image adapté au niveau du format -->
+	list-style-position: inside; <!-- pour le positionnement des puces -->
+}
+
+padding : 50px;  <!-- zone entre bordure et contenu -->
+padding : 50px 40px; <!-- première valeur haut et bas, deuxième valeur gauche et droite -->
+padding : 50px 40px 30px; <!-- H  G&D  B -->
+padding : 50px 40px 30px; <!-- H  D  B  G-->
+ <!-- largeur  -->
+margin : auto; <!-- permet de centrer les blocs -->
+
+<form action="validation.php" method="POST"> <!-- permet un champ de saisie et action de sauvegarder les données, method permet d'envoyer les données. GET fonctionne mais n'est pas très sécurisé, utiliser POST à la place-->
+	<input type="text">
+	<div>
+	Nom : <input type="text" name="nom"> <!--La création de div permet de les avoir les uns en dessous des autres-->
+	</div>
+	<div>
+	<label for="nom-id">Prénom :</label> <input type="text" name="prenom" id="nom-id">  <!--le label permet d'aller directement dans la saisie en les liant -->
+	</div>
+</form>
+
+div {
+	margin :20px 0; <!-- Pour séparer mes deux formulaires -->
+}
+<input type="submit" value="Envoyer la demande"> <!-- permet d'envoyer le formulaire, la value permet de lui donner un nom-->
+<!-- input type radio permet de faire un seul choix, type checkbox permet de faire plusieurs choix, type password permet de cacher les caractères, -->
+<input <type="file" name="monFichier" accept="application/pdf"multiple> <!-- type file pour permettre l'ajout d'un fichier, multiple pour en envoyer plusieurs, accept pour le type de fichier-->
+<!-- ATTENTION pour un file il faut impérativement mettre enctype="multipart/form-data dans form-->
+<input type="reset" value="Remettre à zéro">
+
+<select name="civilite"> <!-- permet de selectionner parmi plusieurs choix-->
+	<option value="brel"> Jacques Brel</option>
+	<option value="dutronc"> Jacques Ductronc</option>
+
+<select name="civilite"> <!-- opt permet de selectionner parmi plusieurs choix et ensuite reselectionner une sous-option-->
+	<optgroup label="chanteur">
+	<option value="brel"> Jacques Brel</option>
+	<option value="dutronc"> Jacques Ductronc</option>
+</optgroup>	
+	<optgroup label="chanson">
+	<option value="brel"> Amsterdam</option>
+	<option value="dutronc"> Et moi et moi et moi</option>
+</optgroup>	
+

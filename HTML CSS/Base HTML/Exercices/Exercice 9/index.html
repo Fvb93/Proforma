@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Ceci est le contenu de notre première page HTML"/>
+	<title>Ma première page HTML</title>
+	<link rel="stylesheet" href="CSS/normalize.css"/>
+	<link rel="stylesheet" href="CSS/style.css"/>
+</head>
+<body>
+	<form action="php.php" method="POST" enctype="multipart/form-data">
+		<fieldset>
+			<legend>Coordonnées</legend>
+			<div>
+				<label for="nom-id">Nom </label> 
+				<input type="text" name="nom" id="nom-id" autofocus class="textfield">  
+			</div>
+			<div>
+				<label for="prenom-id">Prénom </label>
+				<input type="text" name="prenom" id="prenom-id" class="textfield">
+			</div>
+			<div>
+				<label for="homme-id">Homme </label> 
+				<input type="radio" name="homme" id="homme-id">
+				<label for="femme-id">Femme </label> 
+				<input type="radio" name="femme" id="femme-id">
+				<label for="autre-id">Autre </label> 
+				<input type="radio" name="autre" id="autre-id">
+			</div>
+			<div>
+				<label for="telecharger">Télécharger une photo</label>
+				<input type="file" name="monFichier"  accept="application/jpeg" accept="application/png" multiple>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Connexion</legend>
+			<div>
+				<label for="login-id">Login </label> 
+				<input type="text" name="login" id="login-id" class="textfield">  
+			</div>
+			<div>
+				<label for="mdp-id">Mot de passe </label> 
+				<input type="password" name="mdp" id="mdp-id" class="textfield">
+			</div>
+			<div>
+				<label for="rmdp-id">Répéter le mot de passe </label> 
+				<input type="password" name="rmdp" id="rmdp-id" class="textfield">
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Société</legend>
+			<div>
+				<label for="societe-id"> Nom de la société </label> 
+				<input type="text" name="societe" id="societe-id" class="textfield">  
+			</div>
+			<div> 
+				<label for="sectact-id"> Secteur d'activité </label> <select name="societe-id">
+					<option value="vide"> </option>
+					<optgroup label="Informatique">
+						<option value="reseaux"> Réseaux</option>
+						<option value="developpeurweb"> Développeur web</option>
+					</optgroup>	
+					<optgroup label="Restauration">
+						<option value="fastfood"> Fast food</option>
+						<option value="gastro"> Restaurant gastronomique</option>
+					</optgroup>	
+					<optgroup label="Industrie">
+						<option value="auto"> Automobile</option>
+						<option value="metal"> Métallurgie</option>
+					</optgroup>	
+				</select> </div>
+				<div>
+					<label for="description-id"> Description de la société </label >
+				</div>
+				<div>
+					<textarea name="message" id="description-id"></textarea>
+				</div>	
+			</fieldset>
+			<div class="nav">
+				<input type="reset" value="ANNULER">
+				<input type="submit" value="ENVOYER">
+			</div>
+		</form>
+
+
+	</body>
+	</html>
+
+

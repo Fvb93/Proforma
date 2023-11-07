@@ -1,0 +1,47 @@
+body {
+	background: whitesmoke;
+	padding: 30px 100px;
+	font family: "Myriad Pro", "Arial", sans-serif;
+}
+
+div {
+	margin : 20px 0;
+	font-weight: 800;
+}
+form {
+	background: white;
+	padding: 20px;
+	width: 800px;
+	margin: auto;
+}
+input[type=submit], input[type=reset]{
+	background: greenyellow;
+	color: white;
+	padding: 8px;
+	border: 1px solid whitesmoke;
+}
+legend {
+	color: greenyellow;
+	font-style: italic;
+	font-size: 32px;
+	font-weight: 600;
+}
+
+fieldset {
+	margin: 20px;
+	border: 3px solid whitesmoke;
+}
+
+.textfield
+{
+	font-style: italic; 
+}
+
+.nav {
+	text-align: center;
+	margin: 30px 0 10px 0;
+}
+
+textarea {
+	width: 100%;
+}

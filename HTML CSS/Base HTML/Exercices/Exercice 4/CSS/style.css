@@ -1,0 +1,22 @@
+body {
+	background: yellowgreen;
+	text-align: center;
+}
+
+
+h1{
+	color: white;
+	}
+
+h2{
+	color: pink;
+	}
+
+p{
+	color: orange;
+	}
+
+div {
+	border:5px solid blueviolet;
+}
+

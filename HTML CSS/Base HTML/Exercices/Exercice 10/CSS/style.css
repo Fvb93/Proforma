@@ -1,0 +1,46 @@
+body {
+	padding: 10px 0;
+}
+
+div {
+	max-width: auto;
+}
+
+h1 {
+	background: purple; /* vert */
+	padding: 20px;
+}
+
+h2 {
+	background: orange; /* vert */
+	margin: 20px auto;
+	width: 600px;
+	text-align: center;
+	padding: 20px;
+}
+
+.black, .red {
+	display: inline;
+}
+
+.red {
+	display: inline-block;
+	max-width: 23.3333%;
+	vertical-align: top;
+	background: darkred;
+	padding: 5px;
+}
+.black {
+	display: inline-block;
+	max-width: 40%;
+	vertical-align: top;
+	background: black;
+	color: white;
+	padding: 5px;
+}
+
+
+
+
+
+

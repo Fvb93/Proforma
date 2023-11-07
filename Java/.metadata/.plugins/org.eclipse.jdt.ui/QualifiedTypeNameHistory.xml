@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="fonctions.bonjour"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="poo.Schtroumpf"/>
+    <fullyQualifiedTypeName name="poo.GrandSchtroumpf"/>
+    <fullyQualifiedTypeName name="poo.Schtroumpfette"/>
+    <fullyQualifiedTypeName name="poo.Costaud"/>
+    <fullyQualifiedTypeName name="fonctions.saisie"/>
+    <fullyQualifiedTypeName name="fonctions.tab"/>
+</qualifiedTypeNameHistroy>

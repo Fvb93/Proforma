@@ -1,0 +1,48 @@
+body {
+	font-family: "Arial", sans-serif;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+ul {
+	list-style-type: square;
+}
+.note {
+	font-size: 10px;
+	font-style: italic;
+	color: grey;
+}
+
+.note::before {
+	content: "Note : ";
+}
+
+
+a {
+	color:lightblue ;
+	text-decoration: none;
+}
+
+a:hover {
+	color: darkblue;
+}
+
+.navigation a {
+	background: blue;
+	color: white;
+	border-radius: 10px;
+} 
+.prec:hover, .suiv:hover  {
+	background: darkblue;
+}
+
+
+.prec::before {
+	content: "<";
+}
+
+.suiv::after {
+	content: ">";
+}

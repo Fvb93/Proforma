@@ -1,0 +1,53 @@
+body {
+	background: grey;
+	font family: "Myriad Pro", "Arial", sans-serif;
+}
+h1 {
+	background: darkblue;
+	color: white;
+	text-transform: uppercase;
+	border: 5px solid white;
+	text-align: center;
+	padding: 40px;
+	margin: 10px;
+}
+h2 {
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+	margin :  0
+}
+.rubriquesport  h2 {
+	background: darkblue;
+	}
+.rubriquepolitique  h2 {
+	background: darkred;
+	}
+.rubriquesport h3 {
+	color: blue;
+}
+
+.rubriquepolitique  h3 {
+	color: darkred;
+}
+.rubriquesport {
+	background: steelblue;
+	border: 5px solid white;
+	max-width : 800px;
+	margin: 40px auto;
+	padding: 20px;
+}
+.rubriquepolitique {
+	background: indianred;
+	border: 5px solid white;
+	max-width : 800px;
+	margin: 40px auto;
+	padding: 20px;
+}
+.article {
+	background: white;
+	border: 5px solid white;
+	padding: 10px;
+	margin: 15px 0;
+}
